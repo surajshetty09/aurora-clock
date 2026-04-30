@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Raleway:wght@100;200;300&display=swap');
+
+:root {
+  --text: rgba(220, 230, 255, 0.9);
+  --muted: rgba(150, 170, 220, 0.45);
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  cursor: none;
+}
+
+.canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+/* ─── UI Overlay ─────────────────────────────── */
+.ui-overlay {
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  pointer-events: none;
+  z-index: 10;
+  animation: fadeIn 2s ease both;
+}
+
+.time-digital {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: clamp(14px, 2.5vw, 26px);
+  letter-spacing: 0.5em;
+  color: var(--text);
+  text-shadow: 0 0 30px rgba(100,150,255,0.6), 0 0 60px rgba(100,150,255,0.2);
+  margin-bottom: 10px;
+}
+
+.date-str {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: clamp(12px, 1.6vw, 18px);
+  letter-spacing: 0.15em;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.palette-tag {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: clamp(8px, 1vw, 11px);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: rgba(150,170,220,0.35);
+  border: 1px solid rgba(150,170,220,0.1);
+  padding: 4px 16px;
+  border-radius: 20px;
+}
+
+/* ─── Hint ───────────────────────────────────── */
+.hint {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: clamp(9px, 1.1vw, 12px);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(150,170,220,0.25);
+  pointer-events: none;
+  animation: fadeIn 3s ease 2s both;
+  white-space: nowrap;
+}
+
+/* ─── Watermark ──────────────────────────────── */
+.watermark {
+  position: absolute;
+  top: 28px;
+  right: 32px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  font-size: 9px;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  color: rgba(150,170,220,0.2);
+  pointer-events: none;
+  animation: fadeIn 2s ease 1s both;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(8px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.watermark { animation-name: fadeInSimple; }
+.hint      { animation-name: fadeInSimple; }
+@keyframes fadeInSimple {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
