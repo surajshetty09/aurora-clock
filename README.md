@@ -20,12 +20,12 @@ If you are developing a production application, we recommend using TypeScript wi
 ##🕰️ The sky changes with the hour — 7 distinct palettes cycle through the day:
 
 Midnight (0–4h) → deep indigo\
-Twilight (4–7h) → purple/crimson
-Dawn (7–10h) → rose/amber
-Zenith (10–14h) → teal/cyan
-Solstice (14–18h) → forest green
-Dusk (18–21h) → magenta/sunset
-Aurora (21–24h) → northern lights blue
+Twilight (4–7h) → purple/crimson\
+Dawn (7–10h) → rose/amber\
+Zenith (10–14h) → teal/cyan\
+Solstice (14–18h) → forest green\
+Dusk (18–21h) → magenta/sunset\
+Aurora (21–24h) → northern lights blue\
 
 🖱️ Your cursor warps the aurora — move your mouse and the light curtains bend toward you, like gravity pulling the atmosphere.
 💨 Seconds breathe — the aurora subtly expands and contracts with each passing second.
