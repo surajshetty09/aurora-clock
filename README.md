@@ -19,7 +19,7 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ##🕰️ The sky changes with the hour — 7 distinct palettes cycle through the day:
 
-Midnight (0–4h) → deep indigo\n
+Midnight (0–4h) → deep indigo\
 Twilight (4–7h) → purple/crimson
 Dawn (7–10h) → rose/amber
 Zenith (10–14h) → teal/cyan
